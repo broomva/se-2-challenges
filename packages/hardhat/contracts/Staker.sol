@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.4; //Do not change the solidity version as it negativly impacts submission grading
 
-import "hardhat/console.sol";
+// import "hardhat/console.sol";
 import "./ExampleExternalContract.sol";
 
 contract Staker {
@@ -16,7 +16,7 @@ contract Staker {
 	bool public openForWithdraw = true;
 
 	uint256 public constant threshold = 1 ether;
-	uint256 public deadline = block.timestamp + 45 seconds;
+	uint256 public deadline = block.timestamp + 72 hours;
 
 	mapping(address => uint256) public balances;
 
