@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import type { NextPage } from "next";
+import { useEffect, useRef, useState } from "react";
 import { formatEther, parseEther } from "viem";
 import { useBalance } from "wagmi";
 import { Amount } from "~~/components/Amount";
@@ -177,7 +177,7 @@ const DiceGame: NextPage = () => {
               <Amount amount={Number(riggedRollBalance?.formatted || 0)} showUsdPrice className="text-lg" />
             </div>
           </div>
-          {/* <button
+          <button
               onClick={async () => {
               if (!rolled) {
                 setRolled(true);
@@ -190,7 +190,7 @@ const DiceGame: NextPage = () => {
             className="mt-2 btn btn-secondary btn-xl normal-case font-xl text-lg"
           >
             Rigged Roll!
-            </button> */}
+          </button>
 
           <div className="flex mt-8">
             {rolled ? (
